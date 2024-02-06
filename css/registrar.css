@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('tienda.avif'); /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    width: 300px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#heading {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    border-radius: 5px;
+    padding: 0.6em;
+    border: 1px solid #ddd;
+}
+
+.input-icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #555;
+}
+
+.input-field {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: #333;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button1 {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    background-color: #2196F3;
+    color: white;
+}
+
+
+.button1:hover {
+    background-color: #0d5a9a;
+}
+
+

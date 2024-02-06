@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+.header h1 {
+    margin: 0;
+}
+.content {
+    margin: 20px 0;
+}
+.content form {
+    margin: 0 auto;
+    width: 300px;
+}
+.content label {
+    display: block;
+    margin: 10px 0;
+}
+.content input[type="text"], .content input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.button1, .button2 {
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+}
+
+.button1 {
+    background-color: #252525;
+    color: white;
+}
+
+.button1:hover {
+    background-color: black;
+    color: white;
+}
+
+.button2 {
+    background-color: #252525;
+    color: white;
+    margin-left: 10px; /* Añade un margen entre los botones */
+}
+
+.button2:hover {
+    background-color: black;
+    color: white;
+}
+
