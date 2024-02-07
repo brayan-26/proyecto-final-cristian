@@ -1,10 +1,29 @@
-const slider = document.getElementById("slider");
-const images = document.querySelectorAll(".img");
-let contador = 1;
-const intervalo = 2000;
+document.addEventListener("DOMContentLoaded", function () {
+    const slider = document.querySelector(".slider");
+    let counter = 0;
 
-setInterval(function () {
-    let porcentaje = (contador % images.length) * - 25;
-    slider.style.transform = "translateX(" + porcentaje + "%)";
-    contador++;
-}, intervalo);
+    function nextSlide() {
+        if (counter < 2) {
+            counter++;
+        } else {
+            counter = 0;
+        }
+        updateSlider();
+    }
+
+    function prevSlide() {
+        if (counter > 0) {
+            counter--;
+        } else {
+            counter = 2;
+        }
+        updateSlider();
+    }
+
+    function updateSlider() {
+        const position = -counter * 100 + "%";
+        slider.style.transform = "translateX(" + position + ")";
+    }
+
+    setInterval(nextSlide, 6000); 
+});

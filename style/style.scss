@@ -28,7 +28,7 @@ body {
   align-items: center;
   display: flex;
   height: 65px;
-
+  background-color: rgb(249, 251, 253);
   .container-img-logo {
     padding-left: 20px;
     img {
@@ -44,16 +44,8 @@ body {
   }
 }
 
-.container-img-principal {
-  margin: 0 auto;
-  width: 90%;
-  img {
-    width: 100%;
-  }
-}
-
-.container-slider {
-  padding-top: 10px;
+.container-img-busos {
+  padding-top: 20px;
   display: flex;
   margin: 0 auto;
   gap: 1rem;
@@ -76,24 +68,52 @@ body {
   }
 }
 
-// .container-slider {
-//   margin: 0 auto;
-//   display: flex;
-//   margin-top: 20px;
-//   width: 90%;
-//   background-color: red;
-//   gap: 1%;
+.slider-container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  margin-top: 20px;
 
-//   .container-img {
-//     width: 100px;
-//     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-//     .img-slider {
-//       width: 290px;
-//     }
-//   }
-// }
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
 
 footer {
   margin-top: 20px;
-  background-color: red;
+  background-color: rgb(164, 164, 164);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  .container-redes {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 18px;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: white;
+      transition: 0.5s;
+    }
+  }
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px; /* Ajusta según tu preferencia para la distancia desde la parte inferior */
+  right: 20px; /* Ajusta según tu preferencia para la distancia desde el borde derecho */
+  z-index: 1000; /* Ajusta si hay superposición con otros elementos fijos */
 }
